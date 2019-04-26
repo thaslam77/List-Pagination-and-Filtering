@@ -1,4 +1,5 @@
-const page = document.querySelector('.page');
+const page = document.querySelector('.page');  //Store main/parent .div element into a variable "page" with the className "page"
+                                               //Will use "page" to append a child/div element to the webpage.
 const studentList = document.querySelectorAll('li'); //Store list items (54 total) in variable "studentList"
 const maxStudents = 10; //Store number of in variable "maxStudents" for how many list items to show on each page (10 per page)
 const pageNumber = 1; //Variable "pageNumber" storing value '1' to represent page '1' is diplayed when showPage() is first called.
