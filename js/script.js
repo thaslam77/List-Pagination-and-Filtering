@@ -13,7 +13,7 @@ const showPage = (list, page) => {  //showPage() has two parameters "list" and "
   let end = (page * maxStudents);
   for (let i = 0; i < list.length; i += 1) {  //Looping over the "list" (studentList) parameter
     list[i].style.display = 'none'; //Setting all list items display setting to "none" to hide all list items before running the condition.
-    if (i >= start && i <= end) { //if condition is true, display (block) any list items that's greater than or equal to the start index variable and less than the end index variable.
+    if (i >= start && i < end) { //if condition is true, display (block) any list items that's greater than or equal to the start index variable and less than the end index variable.
     list[i].style.display = 'block';
       } else {
         list[i].style.display = 'none';  //if not true, set the display setting for any remaining list items to "none".
